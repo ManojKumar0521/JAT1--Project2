@@ -1,0 +1,1040 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>my Report</title>
+    <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+    <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+    <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/24cb10e/spark/css/style.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+</style></head><script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="test-view -report dark">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">ExtentReports</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">Mar 29, 2023 10:46:33 AM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row">
+                        <div class="test-list">
+                            <div class="test-list-tools">
+                                <ul class="tools pull-left">
+                                    <li>
+                                        <a href="">
+                                            <span class="font-size-14">Tests</span>
+                                        </a>
+                                    </li> 
+                                </ul>
+                                <ul class="tools text-right">
+                                    <li class="user-profile dropdown dropdown-animated scale-left">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-exclamation-circle"></i>
+                                        </a>
+                                        <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+                                            <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+	                                        
+	                                        
+	                                        
+	                                        
+	                                        <div class="dropdown-divider"></div>
+                                            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+                                        </ul>
+                                    </li>
+                                    <li class="user-profile dropdown dropdown-animated scale-left">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-tag"></i>
+                                        </a>
+                                        <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+                                                <a class="dropdown-item" href="#">smoke</a>
+                                        </ul>
+                                    </li>
+                                    <li class="user-profile dropdown dropdown-animated scale-left">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-tablet"></i>
+                                        </a>
+                                        <ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
+                                                <a class="dropdown-item" href="#">windoes</a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-list-wrapper scrollable">
+                                <ul class="test-list-item">
+                                    <li class="test-item"  status="pass" test-id="1"
+                                            author=""
+                                            tag="smoke"
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">Tc_PMI_01</p> 
+                                                <p class="duration text-sm">0h 0m 7s+397ms</p> 
+                                                <span class="datetime">10:46:41 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">Tc_PMI_01</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:46:41</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:46:48</span>
+                                                        <span class='badge badge-default'>0h 0m 7s+397ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> smoke</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:46:41 AM</td>
+				<td>
+						TC_PMI_01
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:45 AM</td>
+				<td>
+						search text box is icon is displayed in Admin homepage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						by search in lower case also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						PIM icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						by search in lower case also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						Leave icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						by search in lower case leave also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						Time icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:46 AM</td>
+				<td>
+						by search in lower case time also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						Recruitment icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						by search in lower case recruitment also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						MY INfo icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						by search in lower case my info also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						perfomence icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						by search in lower case perfomence also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:47 AM</td>
+				<td>
+						Dashbord icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						by search in lower case dashbord also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						Directory icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						by search in lower case directory also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						Maintenance icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						by search in lower case maintenance also displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						Buzz icon is displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:46:48 AM</td>
+				<td>
+						by search in lower case buzz also displayed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="fail" test-id="2"
+                                            author=""
+                                            tag="smoke"
+                                            device="windoes">
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">Tc_PMI_01</p> 
+                                                <p class="duration text-sm">0h 2m 31s+788ms</p> 
+                                                <span class="datetime">10:46:56 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-fail">Tc_PMI_01</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:46:56</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:49:28</span>
+                                                        <span class='badge badge-default'>0h 2m 31s+788ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> smoke</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:46:56 AM</td>
+				<td>
+						TC_PMI_01
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:47:00 AM</td>
+				<td>
+						the both user role and status are displed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:49:28 AM</td>
+				<td>
+						dropdown is not displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:49:28 AM</td>
+				<td>
+						The both Enable and disabled is not displayed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="3"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">verify PMI_page</p> 
+                                                <p class="duration text-sm">0h 0m 11s+815ms</p> 
+                                                <span class="datetime">10:49:37 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">verify PMI_page</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:49:37</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:49:49</span>
+                                                        <span class='badge badge-default'>0h 0m 11s+815ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:49:37 AM</td>
+				<td>
+						Testing the PMI_Page
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:49:49 AM</td>
+				<td>
+						Employe personal ditails added.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="fail" test-id="4"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">verify PMI_ Moudle_page</p> 
+                                                <p class="duration text-sm">0h 1m 6s+893ms</p> 
+                                                <span class="datetime">10:49:57 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-fail">verify PMI_ Moudle_page</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:49:57</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:51:04</span>
+                                                        <span class='badge badge-default'>0h 1m 6s+893ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:49:57 AM</td>
+				<td>
+						Testing the PMI_Moudle_Page
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:51:04 AM</td>
+				<td>
+						the user cant see the tabs present in Employee list page
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="5"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM personal ditails</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">10:51:15 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM personal ditails</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:51:15</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:51:15</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:51:15 AM</td>
+				<td>
+						Testing the PMI_Page of personal ditails
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="6"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM contact ditails</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">10:51:32 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM contact ditails</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:51:32</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:51:32</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:51:32 AM</td>
+				<td>
+						Testing the PMI_Page
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="7"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM Emergence _contact ditails</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">10:51:52 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM Emergence _contact ditails</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:51:52</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:51:52</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:51:52 AM</td>
+				<td>
+						Testing the PMI_Page Emergence contact ditails
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="fail" test-id="8"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM Dependents</p> 
+                                                <p class="duration text-sm">0h 0m 45s+200ms</p> 
+                                                <span class="datetime">10:52:09 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-fail">validating PIM Dependents</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:52:09</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:52:55</span>
+                                                        <span class='badge badge-default'>0h 0m 45s+200ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:52:09 AM</td>
+				<td>
+						Testing the PMI_Page Dependents
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:52:55 AM</td>
+				<td>
+						failed to fill the details
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:52:55 AM</td>
+				<td>
+						user can't see detaills wht he/she filled
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="9"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM JOB details</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">10:53:02 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM JOB details</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:53:02</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:53:02</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:53:02 AM</td>
+				<td>
+						Testing the PMI_Page job details
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="10"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM Job terminate</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">10:53:23 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM Job terminate</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:53:23</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:53:23</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:53:23 AM</td>
+				<td>
+						Testing the PMI_Page job terminate
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="11"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM Job_Activate Employee</p> 
+                                                <p class="duration text-sm">0h 0m 0s+1ms</p> 
+                                                <span class="datetime">10:54:04 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM Job_Activate Employee</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:54:04</span>
+                                                        <span class='badge badge-danger'>03.29.2023 10:54:04</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+1ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:54:04 AM</td>
+				<td>
+						Testing the PMI_Page job Activate employee
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="fail" test-id="12"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM Job_Activate Employee</p> 
+                                                <p class="duration text-sm">0h 7m 12s+461ms</p> 
+                                                <span class="datetime">10:54:48 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-fail">validating PIM Job_Activate Employee</h5>
+                                                        <span class='badge badge-success'>03.29.2023 10:54:48</span>
+                                                        <span class='badge badge-danger'>03.29.2023 11:02:01</span>
+                                                        <span class='badge badge-default'>0h 7m 12s+461ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:54:48 AM</td>
+				<td>
+						Testing the PMI_Page job Activate employee
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:02:01 AM</td>
+				<td>
+						failed to fill the details
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="13"
+                                            author=""
+                                            tag=""
+                                            device="windoes">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">validating PIM Tax Exemptions</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">11:02:12 AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">validating PIM Tax Exemptions</h5>
+                                                        <span class='badge badge-success'>03.29.2023 11:02:12</span>
+                                                        <span class='badge badge-danger'>03.29.2023 11:02:12</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tablet"></i> windoes</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:02:12 AM</td>
+				<td>
+						Testing the PMI_Page job Tax Exemptions
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+                                        </div>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="test-content scrollable">
+                            <div class="test-content-tools">
+                                <ul>
+                                    <li>
+                                        <a class="back-to-test" href="javascript:void(0)">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-content-detail">
+                                <div class="detail-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/24cb10e/spark/js/script.js"></script>
+</body>
+</html>
